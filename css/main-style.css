@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e4959;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  color: #282828;
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 55px;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container {
+  margin: auto;
+  position: relative;
+  width: 80%;
+  background: url("../images/game.jpg") no-repeat center center/cover;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 2;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  z-index: 3;
+}
+
+.container p {
+  font-size: large;
+  font-weight: 600;
+  z-index: 3;
+}
+
+.questionair {
+  width: 80%;
+  margin: auto;
+  padding: 15px;
+  background-color: #aaa;
+  text-align: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  z-index: 2;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  color: #282828;
+  border-radius: 5px;
+  border: 1px solid #282828;
+  padding: 10px 20px;
+  margin: 20px 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.container .btn {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  border-radius: 8px;
+}
+
+.container .btn:hover {
+  color: #282828;
+  border: 1px solid white;
+  background-color: #fff;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #282828;
+}

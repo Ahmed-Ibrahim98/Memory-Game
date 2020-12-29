@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <h1 class="title">Memory Game</h1>
+    <div class="stats-bar">
+        <p>
+            Rating: <span class="stars"><i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i
+                    class="fas fa-star star"></i></span>
+        </p>
+        <p class="moves">
+            Moves: <span class="counter">0</span>
+        </p>
+        <p class="timer">
+            0 Mins 0 Secs
+        </p>
+        <div class="restart" onclick="startGame()">
+            <i class="fas fa-redo"></i>
+        </div>
+    </div>
+    <section class="memory-game">
+        <div class="memory-card" data-object="anchor">
+            <img class="front-face" src="images/anchor.png" alt="anchor" />
+            <span class="back-face"></span>
+        </div>
+        <div class="memory-card" data-object="anchor">
+            <img class="front-face" src="images/anchor.png" alt="anchor" />
+            <span class="back-face"></span>
+        </div>
+
+        <div class="memory-card" data-object="bat">
+            <img class="front-face" src="images/bat.png" alt="bat" />
+            <span class="back-face"></span>
+        </div>
+        <div class="memory-card" data-object="bat">
+            <img class="front-face" src="images/bat.png" alt="bat" />
+            <span class="back-face"></span>
+        </div>
+
+        <div class="memory-card" data-object="bike">
+            <img class="front-face" src="images/bike.png" alt="bike" />
+            <span class="back-face"></span>
+        </div>
+        <div class="memory-card" data-object="bike">
+            <img class="front-face" src="images/bike.png" alt="bike" />
+            <span class="back-face"></span>
+        </div>
+
+        <div class="memory-card" data-object="bomb">
+            <img class="front-face" src="images/bomb.png" alt="bomb" />
+            <span class="back-face"></span>
+        </div>
+        <div class="memory-card" data-object="bomb">
+            <img class="front-face" src="images/bomb.png" alt="bomb" />
+            <span class="back-face"></span>
+        </div>
+
+        <div class="memory-card" data-object="box">
+            <img class="front-face" src="images/box.png" alt="box" />
+            <span class="back-face"></span>
+        </div>
+        <div class="memory-card" data-object="box">
+            <img class="front-face" src="images/box.png" alt="box" />
+            <span class="back-face"></span>
+        </div>
+
+        <div class="memory-card" data-object="diamond">
+            <img class="front-face" src="images/diamond.png" alt="diamond" />
+            <span class="back-face"></span>
+        </div>
+        <div class="memory-card" data-object="diamond">
+            <img class="front-face" src="images/diamond.png" alt="diamond" />
+            <span class="back-face"></span>
+        </div>
+        <div class="memory-card" data-object="feather">
+            <img class="front-face" src="images/feather.png" alt="feather" />
+            <span class="back-face"></span>
+        </div>
+        <div class="memory-card" data-object="feather">
+            <img class="front-face" src="images/feather.png" alt="feather" />
+            <span class="back-face"></span>
+        </div>
+
+        <div class="memory-card" data-object="heart">
+            <img class="front-face" src="images/heart.png" alt="heart" />
+            <span class="back-face"></span>
+        </div>
+        <div class="memory-card" data-object="heart">
+            <img class="front-face" src="images/heart.png" alt="heart" />
+            <span class="back-face"></span>
+        </div>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Congratulations 🎉</h2>
+                <a class="close" href=#>×</a>
+                <div class="content-1">
+                    Congratulations you made it! 🎉🎉
+                </div>
+                <div class="content-2">
+                    <p>You made <span id=finalMove> </span> moves </p>
+                    <p>in <span id=totalTime> </span> </p>
+                    <p>Rating: <span id=starRating></span></p>
+                </div>
+                <button id="play-again" onclick="playAgain()">
+                    Play again 😄</a>
+                </button>
+            </div>
+        </div>
+    </section>
+    <span class="footer"></span>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
