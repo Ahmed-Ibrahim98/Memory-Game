@@ -180,6 +180,7 @@ h1.title {
   padding: 40px;
 }
 
+
 @media (max-width: 680px) {
   .memory-game {
     width: 460px;
@@ -198,10 +199,37 @@ h1.title {
   .stats-bar {
     width: 90%;
   }
+  h1.title {
+    font-size: 50px;
+  }
 }
 
+@media (max-width: 500px) {
+  .memory-game {
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+  }
+  .memory-card {
+    width: calc(25% - 10px);
+    height: calc(25% - 10px);
+    margin: 5px;
+  }
+  .front-face,
+  .back-face {
+    padding: 15px;
+  }
+  .stats-bar {
+    width: 90%;
+    font-size: 12px;
+  }
+  h1.title {
+    font-size: 40px;
+  }
+}
 @media (min-width: 900px) {
   .stats-bar {
     width: 50%;
   }
 }
+
