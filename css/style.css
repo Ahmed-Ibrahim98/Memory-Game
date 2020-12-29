@@ -206,8 +206,8 @@ h1.title {
 
 @media (max-width: 500px) {
   .memory-game {
-    width: 380px;
-    height: 380px;
+    width: 370px;
+    height: 370px;
     padding: 5px;
   }
   .memory-card {
