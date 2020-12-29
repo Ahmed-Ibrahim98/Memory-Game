@@ -102,3 +102,26 @@ body {
   color: #fff;
   background-color: #282828;
 }
+
+@media (max-width: 680px) {
+  .header {
+    height: 80px;
+  }
+  .header h2 {
+    font-size: 20;
+    letter-spacing: 1px;
+    line-height: 1.3;
+  }
+  .container h1,
+  .questionair h2 {
+    font-size: 18px;
+  }
+  .container p {
+    font-size: 14px;
+  }
+  .container,
+  .questionair {
+    padding: 10px;
+  }
+}
+
